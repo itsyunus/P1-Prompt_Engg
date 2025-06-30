@@ -1,4 +1,4 @@
-# 🧠 PromptFlow Lite
+# 🧠 PlayerOne
 
 A minimal, OpenAI-free LLM flow engine to create and test chatbots using open-source models like `gpt2` or `phi-2`. Inspired by Azure's Prompt Flow but works **fully offline** and locally.
 
@@ -17,7 +17,7 @@ A minimal, OpenAI-free LLM flow engine to create and test chatbots using open-so
 ## 📁 Directory Structure
 
 ```
-promptflow_lite/
+PlayerOne/
 ├── cli.py                   # CLI commands (init, test)
 ├── engine.py                # Flow loader + chatbot runner
 ├── flow_templates/
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 ### 1. Initialize a chatbot flow
 
 ```bash
-python -m promptflow_lite.main init my_chatbot
+python -m PlayerOne.main init my_chatbot
 ```
 
 This creates a folder `my_chatbot/flow.yaml` based on the default template.
@@ -65,7 +65,7 @@ This creates a folder `my_chatbot/flow.yaml` based on the default template.
 ### 2. Run the chatbot interactively
 
 ```bash
-python -m promptflow_lite.main test my_chatbot
+python -m PlayerOne.main test my_chatbot
 ```
 
 Type messages in the terminal. Type `exit` to quit.
