@@ -1,0 +1,3 @@
+flow:
+  name: simple_chat
+  model: gpt2
